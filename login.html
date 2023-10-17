@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Registrarse- Athenas</title>
+        
+    </head>
+    <body >
+        <main>
+            <div class="container py-4" >
+                <div class="row align-items-md-stretch" >
+                    <img src="images/nombre.png" style=" width: 30%; height: 100%; ">
+                    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center" >
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm" style="margin-top:25%;">
+                                <b>Esta tarjeta representa una imagen de las historias/características de la plataforma, para así capturar la atención de los usuarios </b>
+                            </div>
+                        </div>
+                        <div class="col-md-10 mx-auto col-lg-5 text-center">
+                            <form class="p-4 p-md-5 border rounded-3 bg-light">
+                                <h4 class="my-0 fw-normal">Regístrate</h4>
+                                <small class="text-muted">Comienza a leer o compartir historias</small>
+
+                                <hr class="my-4">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="floatingInput" placeholder="@">
+                                    <label for="floatingInput">Nombre de usuario</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+                                    <label for="floatingInput">Correo electrónico</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña">
+                                    <label for="floatingPassword">Contraseña</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="floatingPasswordConfirm" placeholder="Confirmar contraseña">
+                                    <label for="floatingPasswordConfirm">Confirmar contraseña</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="date" class="form-control" id="floatingDate" placeholder="Fecha de nacimiento">
+                                    <label for="floatingDate">Fecha de nacimiento</label>
+                                </div>
+                                <div class="checkbox mb-3">
+                                    <label>
+                                      <input id="tyc"type="checkbox" value="remember-me"> Leí y acepto los Términos y Condiciones de athenas
+                                    </label>
+                                  </div>
+                                <a   href="index.php" id="btn-registro" class="w-100 btn btn-lg btn-p"  type="submit" disabled>Regístrate</a>
+                                
+                                <div class="text-center" >
+                                    <a href="#"><img class="social"  src="images/google.svg" alt="google"></a>
+                                    <a href="#"><img class="social" src="images/facebook.svg" alt="facebook"></a>
+                                    <a href="#"><img class="social"  src="images/x.svg" alt="twitter"></a>
+                                </div>
+                                
+
+                                <hr class="my-4">
+                            </form>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+    </body>
+
+<html>
+    <script>
+        // Obtén una referencia a la casilla de verificación y al botón de registro
+        const checkbox = document.getElementById('tyc');
+        const botonRegistro = document.getElementById('btn-registro');
+    
+        // Agrega un evento de cambio a la casilla de verificación
+        checkbox.addEventListener('change', function () {
+            // Si la casilla de verificación está marcada, habilita el botón de registro, de lo contrario, deshabilítalo
+            if (checkbox.checked) {
+                botonRegistro.removeAttribute('disabled');
+            } else {
+                botonRegistro.setAttribute('disabled', 'true');
+            }
+        });
+    </script>
+    

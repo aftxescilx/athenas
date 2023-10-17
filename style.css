@@ -1,0 +1,180 @@
+/* En tu archivo style.css */
+body {
+    width: 100% ; height: 100% ; margin: 0 ; border: 0 ;
+    background-image: url('images/back.png');
+    background-size: cover; /* Ajusta el tamaño de la imagen al cuerpo */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-attachment: fixed; /* Fija la imagen en su lugar mientras se desplaza la página */
+}
+.btn-p {
+    background-color: #AB296A; /* Define el color de fondo deseado */
+    border-radius: 30px;
+    color: #2C1A4D; /* Cambia el color del texto si es necesario */
+    cursor: pointer;
+}
+.btn-don {
+    background-color: #FFCD39; /* Define el color de fondo deseado */
+    border-radius: 50%;
+    color: #AB296A; /* Cambia el color del texto si es necesario */
+    cursor: pointer;
+    font-weight: bold;
+}
+.social{
+    margin-top: 15px;
+    width:40px;
+}
+.portada{
+    width: 100%;;
+}
+.btn-tag {
+    background-color: #2C1A4D; /* Define el color de fondo deseado */
+    color: #FFFAE4;
+    border-radius: 30px;
+    cursor: pointer;
+
+
+} /* Estilos para las pestañas */
+.tab {
+    display: none; /* Oculta todos los contenidos de las pestañas por defecto */
+}
+/* Estilos para las pestañas activas */
+.tab.active {
+    display: block; /* Muestra el contenido de la pestaña activa */
+}
+/* Estilos para las pestañas (enlaces) */
+.tab-link {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #AB296A;
+    color: #FFFFFF;
+    text-decoration: none;
+    border: 1px solid #AB296A;
+    border-radius: 5px;
+}
+/* Estilos para las pestañas (enlaces) activas */
+.tab-link.active {
+    background-color: #FFFAE4;
+    color: #AB296A;
+}.buscar {
+    width: 25%; /* Ancho personalizado */
+    outline: none; /* Elimina el contorno de enfoque */
+    box-shadow: none;
+}.buscar:focus {
+    width: 25%; /* Ancho personalizado */
+    outline: none; /* Elimina el contorno de enfoque */
+    box-shadow: none;
+    border-color: transparent; 
+}.navbar-buscar:focus {
+    outline: none; /* Elimina el contorno de enfoque */
+    box-shadow: none;
+    border-color: transparent; 
+ } .linea {
+    background-color: #FFF7AD; /* Cambia el color de fondo de la barra de progreso */
+    color: #FFC9DA;
+}.custom-button {
+    background-color: #AB296A;
+    color: #FFF; /* Color del texto en botones inactivos */
+    border-color: #AB296A; /* Color del borde en botones inactivos */
+}
+
+/* Estilo para botones activos */
+.custom-button.active {
+    background-color: #FFA500; /* Cambia el color de fondo de los botones activos */
+    color: #000; /* Cambia el color del texto en botones activos */
+    border-color: #FFA500; /* Cambia el color del borde en botones activos */
+}
+.custom-button:hover, .custom-button:focus {
+    background-color: #AB296A; /* Mantén el mismo color de fondo */
+    color: #FFF; /* Mantén el mismo color del texto */
+    border-color: #AB296A; /* Mantén el mismo color del borde */
+}/* Estilo para el ítem seleccionado en el menú desplegable */
+.dropdown-menu .dropdown-item.active {
+    background-color: #AB296A !important; /* Cambia el color de fondo del ítem seleccionado */
+    color: #FFF !important; /* Cambia el color del texto del ítem seleccionado */
+}.padding {
+    padding: 3rem !important;
+    margin-left: 200px
+}
+.card-img-top{
+    height: 300px;
+}
+.card-no-border .card {
+    border-color: #d7dfe3;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05)
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem
+}
+.pro-img {
+    margin-top: -80px;
+    margin-bottom: 20px
+}
+.little-profile .pro-img img {
+    width: 150px;
+    height: 150px;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 100%
+}
+html body .m-b-0 {
+    margin-bottom: 0px
+}
+h3 {
+    line-height: 30px;
+    font-size: 21px
+}
+.btn-rounded.btn-md {
+    padding: 12px 35px;
+    font-size: 16px
+}
+html body .m-t-10 {
+    margin-top: 10px
+}
+.btn-primary,
+.btn-primary.disabled {
+    background: #7460ee;
+    border: 1px solid #7460ee;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(116, 96, 238, 0.14), 0 3px 1px -2px rgba(116, 96, 238, 0.2), 0 1px 5px 0 rgba(116, 96, 238, 0.12);
+    box-shadow: 0 2px 2px 0 rgba(116, 96, 238, 0.14), 0 3px 1px -2px rgba(116, 96, 238, 0.2), 0 1px 5px 0 rgba(116, 96, 238, 0.12);
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in
+}
+.btn-rounded {
+    border-radius: 60px;
+    padding: 7px 18px
+}
+.m-t-20 {
+    margin-top: 20px
+}
+.text-center {
+    text-align: center !important
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #455a64;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem
+}
+.profile-head {
+    transform: translateY(5rem)
+}
+
+.cover {
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
